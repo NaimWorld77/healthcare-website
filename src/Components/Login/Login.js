@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link,useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
+import useFirebase from '../../Hooks/useFirebase';
 
 const Login = () => {
     const {user,signInUsingGoogle} = useAuth();
@@ -15,18 +16,28 @@ const Login = () => {
             })
         }
 
+        const {handleEmail,handlePassword ,handleLogin} = useFirebase();
+
+
+
+
+
+
+
+
+
     return (
         <div>
             <div className="bg-success">
                 <h2 className="text-danger">Login</h2>
-                <form onSubmit="" >
+                <form onSubmit={handleLogin}>
                     <input className="mt-3 py-2 px-4 rounded" type="email" placeholder="your email" />
                     <br />
                     <br />
-                    <input className="py-2 px-4 rounded" type="password" placeholder="enter password" />
+                    <input onBlur={handleEmail} className="py-2 px-4 rounded" type="password" placeholder="enter password" />
                     <br />
                     <br />
-                    <input className="btn btn-warning" type="submit" value="Submit" />
+                    <input onBlur={handlePassword} className="btn btn-warning" type="submit" value="Submit" />
                 </form>
                 <p className="text-white">New to NA HealthCare? 
                 

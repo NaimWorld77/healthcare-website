@@ -9,6 +9,7 @@ used-
 
 
 
+
 used route
 1.home
 2.services
@@ -16,3 +17,10 @@ used route
 4.doctors
 5.research
 6.covid19
+
+two more important thing is 
+1. footer
+2. slider
+ 
+
+One header used on this site .

@@ -16,8 +16,8 @@ const Login = () => {
         }
 
     return (
-        <div className="bg-secondary">
-            <div>
+        <div>
+            <div className="bg-success">
                 <h2 className="text-danger">Login</h2>
                 <form onSubmit="" >
                     <input className="mt-3 py-2 px-4 rounded" type="email" placeholder="your email" />

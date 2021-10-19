@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="bg-dark p-3">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-6 col-sm-12">
                     <h3 className="text-danger">NA HealthCare</h3>
                     <h6 className="text-white">Adresss: 55 Commercial Rd, Melbourne VIC 3004
                     (03) 9076 2000</h6>
@@ -17,7 +17,7 @@ const Footer = () => {
                     <i className="fab fa-facebook-messenger"></i></p>
 
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 col-sm-12">
                     <h1 className="text-danger">Our Best</h1>
                    <div className="text-white">
                    <p>Health professionals</p>

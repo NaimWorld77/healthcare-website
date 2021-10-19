@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth';
 
 const Register = () => {
-    const {user,signInUsingGoogle} = useAuth()
-    return (
-        <div className="bg-secondary">
-            <div>
+    const {user,signInUsingGoogle } = useAuth();
+    
+     return (
+        <div className="" >
+            <div className="bg-success" width="40%">
                 <h2 className="text-danger">Create Account</h2>
             <form onSubmit=""  >
                     <input className="mt-3 py-2 px-4 rounded" type="email" placeholder="your email" />
@@ -18,7 +19,7 @@ const Register = () => {
                     <input className="py-2 px-4 rounded" type="password" placeholder="Re-enter password" />
                     <br />
                     <br />
-                    <input className="btn btn-warning" type="submit" value="Submit" />
+                    <input  className="btn btn-warning" type="submit" value="Submit" />
                 </form>
                 <p className="text-white">Already have an account? <Link to="/login">Login</Link> </p>
                 <div>-------------or--------------</div>

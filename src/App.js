@@ -11,6 +11,8 @@ import Research from './Components/Research/Research';
 import DetailsService from './Components/DetailsService/DetailsService';
 import Services from './Components/Services/Services';
 import Slider from './Components/Slider/Slider';
+import Login from './Components/Login/Login';
+import Register from './Components/Register/Register';
 
 function App() {
   return (
@@ -31,6 +33,12 @@ function App() {
         </Route>
         <Route path="/research">
         <Research></Research>
+        </Route>
+        <Route path="/login">
+        <Login></Login>
+        </Route>
+        <Route path="/register">
+        <Register></Register>
         </Route>
         <Route path="/detailsservice/:serviceId">
           <DetailsService></DetailsService>
